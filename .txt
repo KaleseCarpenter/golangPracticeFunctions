@@ -1,0 +1,74 @@
+Variables
+
+1) VARIABLES ARE CASE SENSITIVE 
+    ** Example** 
+        -These names userName, USERNAME, UserName, and uSERnAME are all completely different variables
+
+ 
+ 2) If a variable starts with an uppercase letter, then that variable is accessible outside the package it was declared in (or exported). If a variable starts with a lowercase letter, then it is only available within the package it is declared in.
+
+    **Example**
+        var Email string - Email starts with an uppercase letter and can be accessed by other packages.
+        var password string - Password starts with a lowercase letter, and is only accessible inside the package it is declared in.
+
+Block Scope- the variable isn't visible outside the block
+3) Conversion functions have to be explicitly converted when changing TYPES because floating point numbers can be decimals
+    **Example on line 72**
+
+4) NAMING CONVENTIONS
+- Pascal or camelCase
+    - KEEP ACRONYMS ALL UPPERCASE - like HTTPS URL, HTTPREQUEST
+
+-As short as reasonable
+    - longer names for longer lives
+
+5) A String is an alias for a stream of bytes
+
+6) Variable VISIBILITY
+- lowercase first letter for package scope - all files in that package have access to that variable
+- upper case first letter to export - Exported Globally
+- no private scope - but you can declare it in a block at the block level
+
+ Variable DECLARATION 
+- var foo int - declare and initialize later
+- var foo int = 42 - declare and initialize at the same time
+- foo := 42 - short hand version for decalring variable and letting the compiler decide **MOST COMMONLY USED**
+
+7) Can't redeclare variables, but can shadow them
+-Shadowing - the variable with the inner most scope takes precedent
+
+8) All variables must be USED
+
+---------------------------------------------------------------------------------------------------
+
+                                    PRIMITIVE TYPES
+
+VARIABLES AUTOMATICALLY HAVE A VALUE OF 0
+
+Integers -- the number beside these below stands for bit
+- int8 -128 - 127
+- int16 -32 768 - 32 767
+- int32 -2 147 483 648 - 2 147 483 647
+- int64 -9 223 372 036 854 775 808 - 9 223 372 036 854 775 807
+ 
+**unsigned**
+- uint8 0 - 255
+- uint16 0 - 65 535
+- uint32 0 - 4 294 967 295
+
+byte is an alias for a uint8 
+
+1) when you divide an integer by an integer, you have to get an integer as the result
+    - You can't change type mid operation
+
+
+Bitwise operators
+
+ &   bitwise AND
+ |   bitwise OR
+ ^   bitwise XOR
+&^   AND NOT
+<<   left shift
+>>   right shift
+
+
